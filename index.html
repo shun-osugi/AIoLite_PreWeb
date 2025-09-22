@@ -1,115 +1,173 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AIoLite サポート</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+                background-color: #f7f9fc;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIoLite サポート</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f9fc;
-        }
+            .container {
+                max-width: 800px;
+            }
 
-        .container {
-            max-width: 800px;
-        }
+            .aiolite-logo {
+                font-family: "Inter", sans-serif;
+                font-weight: 700;
+                font-size: 2.5rem;
+                color: #5eddff;
+                text-align: center;
+            }
 
-        .aiolite-logo {
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 2.5rem;
-            color: #4A90E2;
-            text-align: center;
-        }
+            .faq-item summary {
+                cursor: pointer;
+            }
 
-        .faq-item summary {
-            cursor: pointer;
-        }
+            .faq-item summary::marker {
+                content: "+ ";
+            }
 
-        .faq-item summary::marker {
-            content: "+ ";
-        }
+            .faq-item[open] summary::marker {
+                content: "- ";
+            }
+        </style>
+    </head>
 
-        .faq-item[open] summary::marker {
-            content: "- ";
-        }
-    </style>
-</head>
+    <body class="bg-gray-100 p-6 sm:p-10">
+        <div
+            class="container mx-auto bg-white rounded-2xl shadow-xl p-8 sm:p-12 border border-gray-200"
+        >
+            <!-- ヘッダー -->
+            <header class="text-center mb-10">
+                <h1 class="aiolite-logo mb-2">AIoLite</h1>
+                <p class="text-2xl font-semibold text-gray-800">
+                    サポートページ
+                </p>
+                <p class="text-sm text-gray-500 mt-2">
+                    AIoLiteに関するご質問、お問い合わせはこちらから。
+                </p>
+            </header>
 
-<body class="bg-gray-100 p-6 sm:p-10">
-
-    <div class="container mx-auto bg-white rounded-2xl shadow-xl p-8 sm:p-12 border border-gray-200">
-
-        <!-- ヘッダー -->
-        <header class="text-center mb-10">
-            <h1 class="aiolite-logo mb-2">AIoLite</h1>
-            <p class="text-2xl font-semibold text-gray-800">サポートページ</p>
-            <p class="text-sm text-gray-500 mt-2">AIoLiteに関するご質問、お問い合わせはこちらから。</p>
-        </header>
-
-        <!-- アプリ概要セクション -->
-        <section class="mb-12">
-            <h2 class="text-xl sm:text-2xl font-bold text-gray-700 mb-4 pb-2 border-b-2 border-gray-200">AIoLiteとは？</h2>
-            <div class="flex flex-col sm:flex-row items-center sm:space-x-8">
-                <!-- イオのイメージ -->
-                <div class="flex-shrink-0 mb-6 sm:mb-0">
-                    <img src="https://placehold.co/150x150/4A90E2/ffffff?text=io" alt="AIoLiteキャラクター「イオ」"
-                        class="rounded-full shadow-lg">
+            <!-- アプリ概要セクション -->
+            <section class="mb-12">
+                <h2
+                    class="text-xl sm:text-2xl font-bold text-gray-700 mb-4 pb-2 border-b-2 border-gray-200"
+                >
+                    AIoLiteとは？
+                </h2>
+                <div
+                    class="flex flex-col sm:flex-row items-center sm:space-x-8"
+                >
+                    <!-- イオのイメージ -->
+                    <div class="flex-shrink-0 mb-6 sm:mb-0 sm:w-1/4">
+                        <img
+                            id="io-image"
+                            src="https://placehold.co/150x150/4A90E2/ffffff?text=io"
+                            alt="AIoLiteキャラクター「イオ」"
+                            class="rounded-full shadow-lg"
+                        />
+                    </div>
+                    <div class="text-gray-600 space-y-4 sm:w-3/4">
+                        <p>
+                            AIoLiteは、現役大学生が開発した、小学生高学年向けのAI学習サポートアプリです。勉強が苦手な子でも、まるで友達のように隣に寄り添ってくれるAIキャラクター「イオ」と一緒に、楽しく学ぶことができます。
+                        </p>
+                        <p>
+                            問題の答えを教えるのではなく、ヒントや問いかけを通して「自分で解く力」を育みます。日常の不思議と勉強を繋げることで、お子さんの「なぜ？」という好奇心を大切にします。
+                        </p>
+                    </div>
                 </div>
-                <div class="text-gray-600 space-y-4">
-                    <p>AIoLiteは、現役大学生が開発した、小学生高学年向けのAI学習サポートアプリです。勉強が苦手な子でも、まるで友達のように隣に寄り添ってくれるAIキャラクター「イオ」と一緒に、楽しく学ぶことができます。
+            </section>
+
+            <!-- お問い合わせセクション -->
+            <section class="mb-12">
+                <h2
+                    class="text-xl sm:text-2xl font-bold text-gray-700 mb-4 pb-2 border-b-2 border-gray-200"
+                >
+                    お問い合わせ
+                </h2>
+                <div
+                    class="text-center bg-blue-50 p-6 rounded-xl border border-blue-200 shadow-sm"
+                >
+                    <p class="text-gray-700 text-lg mb-4 font-medium">
+                        ご質問やご意見、ご要望などはこちらからお寄せください。
                     </p>
-                    <p>問題の答えを教えるのではなく、ヒントや問いかけを通して「自分で解く力」を育みます。日常の不思議と勉強を繋げることで、お子さんの「なぜ？」という好奇心を大切にします。</p>
+                    <a
+                        href="mailto:support@aiolite.com"
+                        class="inline-block px-8 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300"
+                    >
+                        お問い合わせフォームを開く
+                    </a>
                 </div>
-            </div>
-        </section>
+                <p class="text-sm text-gray-500 mt-4 text-center">
+                    ※ 上記リンクをクリックすると、メールアプリが起動します。
+                </p>
+            </section>
 
-        <!-- お問い合わせセクション -->
-        <section class="mb-12">
-            <h2 class="text-xl sm:text-2xl font-bold text-gray-700 mb-4 pb-2 border-b-2 border-gray-200">お問い合わせ</h2>
-            <div class="text-center bg-blue-50 p-6 rounded-xl border border-blue-200 shadow-sm">
-                <p class="text-gray-700 text-lg mb-4 font-medium">ご質問やご意見、ご要望などはこちらからお寄せください。</p>
-                <a href="mailto:support@aiolite.com"
-                    class="inline-block px-8 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300">
-                    お問い合わせフォームを開く
-                </a>
-            </div>
-            <p class="text-sm text-gray-500 mt-4 text-center">※ 上記リンクをクリックすると、メールアプリが起動します。</p>
-        </section>
+            <!-- FAQセクション -->
+            <section>
+                <h2
+                    class="text-xl sm:text-2xl font-bold text-gray-700 mb-4 pb-2 border-b-2 border-gray-200"
+                >
+                    よくあるご質問 (FAQ)
+                </h2>
+                <div class="space-y-4 text-gray-600">
+                    <details
+                        class="bg-gray-50 p-4 rounded-lg shadow-sm faq-item"
+                    >
+                        <summary class="font-semibold text-gray-700">
+                            Q. AIoLiteは無料ですか？
+                        </summary>
+                        <p class="mt-2 text-sm leading-relaxed">
+                            A.
+                            AIoLiteは、一部無料でご利用いただけます。AIサービス利用にかかる従量課金のため、一部機能は有料プランにて提供する予定です。詳細はアプリ内のお知らせをご確認ください。
+                        </p>
+                    </details>
 
-        <!-- FAQセクション -->
-        <section>
-            <h2 class="text-xl sm:text-2xl font-bold text-gray-700 mb-4 pb-2 border-b-2 border-gray-200">よくあるご質問 (FAQ)
-            </h2>
-            <div class="space-y-4 text-gray-600">
+                    <details
+                        class="bg-gray-50 p-4 rounded-lg shadow-sm faq-item"
+                    >
+                        <summary class="font-semibold text-gray-700">
+                            Q. 利用推奨環境を教えてください。
+                        </summary>
+                        <p class="mt-2 text-sm leading-relaxed">
+                            A. iOS
+                            15.0以降を搭載したiPhoneおよびiPadでのご利用を推奨しています。その他のOSでの動作は保証しておりません。
+                        </p>
+                    </details>
 
-                <details class="bg-gray-50 p-4 rounded-lg shadow-sm faq-item">
-                    <summary class="font-semibold text-gray-700">Q. AIoLiteは無料ですか？</summary>
-                    <p class="mt-2 text-sm leading-relaxed">A.
-                        AIoLiteは、一部無料でご利用いただけます。AIサービス利用にかかる従量課金のため、一部機能は有料プランにて提供する予定です。詳細はアプリ内のお知らせをご確認ください。</p>
-                </details>
+                    <details
+                        class="bg-gray-50 p-4 rounded-lg shadow-sm faq-item"
+                    >
+                        <summary class="font-semibold text-gray-700">
+                            Q. 問い合わせの返信はどれくらいかかりますか？
+                        </summary>
+                        <p class="mt-2 text-sm leading-relaxed">
+                            A.
+                            お問い合わせ内容によっては返信まで数日お時間をいただく場合がございます。何卒ご了承ください。
+                        </p>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </body>
+    <script>
+        const ioImagePath = "img/io.png";
 
-                <details class="bg-gray-50 p-4 rounded-lg shadow-sm faq-item">
-                    <summary class="font-semibold text-gray-700">Q. 利用推奨環境を教えてください。</summary>
-                    <p class="mt-2 text-sm leading-relaxed">A. iOS
-                        15.0以降を搭載したiPhoneおよびiPadでのご利用を推奨しています。その他のOSでの動作は保証しておりません。</p>
-                </details>
-
-                <details class="bg-gray-50 p-4 rounded-lg shadow-sm faq-item">
-                    <summary class="font-semibold text-gray-700">Q. 問い合わせの返信はどれくらいかかりますか？</summary>
-                    <p class="mt-2 text-sm leading-relaxed">A. お問い合わせ内容によっては返信まで数日お時間をいただく場合がございます。何卒ご了承ください。</p>
-                </details>
-
-            </div>
-        </section>
-
-    </div>
-
-</body>
-
+        document.addEventListener("DOMContentLoaded", function () {
+            const ioImageElement = document.getElementById("io-image");
+            if (ioImageElement && ioImagePath) {
+                ioImageElement.src = ioImagePath;
+            }
+        });
+    </script>
 </html>
